@@ -1,9 +1,12 @@
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 //      System.out.println("Soy la prueba típica");
 //
@@ -31,39 +34,39 @@ public class Main {
 //1 - ARRAYLIST
 
         List<String> employees = new ArrayList<>();
+        List<String> interns = new ArrayList<>();
 
 
 //2- SCANNER
         Scanner scanner = new Scanner(System.in);
-//
-//do{
-//
-//    System.out.println("Nombre del empleado: ");
-//    String name = scanner.nextLine();
-//
-//    System.out.println("Email de empresa: ");
-//    String email = scanner.nextLine();
-//
-//    System.out.println("Edad del empleado: ");
-//    int age = scanner.nextInt();
-//
-//    System.out.println("Salario del empleado: ");
-//    double salary = scanner.nextDouble();
-//    scanner.nextLine();
-//
-//    Employee newEmployee  = new Employee(name, email, age, salary);
-//
-//     employees.add(String.valueOf(newEmployee));
-//
-//
-//     }while(employees.size() < 2 );
-//
-//        System.out.println(employees.get(0) + employees.get(1));
 
+//        EMPLEADOS
+        do{
+            System.out.println("Nombre del empleado: ");
+            String name = scanner.nextLine();
+
+            System.out.println("Email de empresa: ");
+            String email = scanner.nextLine();
+
+            System.out.println("Edad del empleado: ");
+            int age = scanner.nextInt();
+
+            System.out.println("Salario del empleado: ");
+            double salary = scanner.nextDouble();
+            scanner.nextLine();
+
+            Employee newEmployee  = new Employee(name, email, age, salary);
+
+            employees.add(String.valueOf(newEmployee));
+
+
+        }while(employees.size() < 10 );
+
+//      INTERNOS
 
         do {
 
-            System.out.println("Nombre del empleado: ");
+            System.out.println("Nombre del interno: ");
             String name = scanner.nextLine();
 
 
@@ -71,29 +74,49 @@ public class Main {
             String email = scanner.nextLine();
 
 
-            System.out.println("Edad del empleado: ");
+            System.out.println("Edad del interno: ");
             int age = scanner.nextInt();
 
 
-            System.out.println("Salario del empleado: ");
+            System.out.println("Salario del interno: ");
             double salary = scanner.nextDouble();
             scanner.nextLine();
 
 
             Intern newIntern = new Intern(name, email, age, salary);
 
-            employees.add(String.valueOf(newIntern));
+            interns.add(String.valueOf(newIntern));
 
 
-        }while(employees.size() < 2 );
+        }while(interns.size() < 3 );
 
-        System.out.println(employees.get(0) + employees.get(1));
 
 scanner.close();
 
 
 
+// CREAR ARCHIVO (y meter datos)
 
+        String filepath = "src/employees.txt";
+        FileWriter write = new FileWriter(filepath,true);
+        write.write("EMPLEADOS" + "\n");
+
+        for( int i = 0; i < employees.size(); i++){
+            write.write(employees.get(i));
+        }
+
+        write.close();
+
+
+        String filepath2 = "src/interns.txt";
+        FileWriter write2 = new FileWriter(filepath2,true);
+        write2.write("INTERNOS" + "\n" );
+
+        for( int i = 0; i < interns.size(); i++){
+            write2.write(interns.get(i));
+        }
+
+          write2.close();
 
 
     }

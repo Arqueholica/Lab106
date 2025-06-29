@@ -57,9 +57,9 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee data " + '\n' +
-                "- name: '" + name + '\n' +
-                "- email: '" + email + '\n' +
+        return '\n' + "Employee data " + '\n' +
+                "- name: " + name + '\n' +
+                "- email: " + email + '\n' +
                 "- age: " + age + '\n' +
                 "- salary: " + salary + '\n';
     }

@@ -1,0 +1,19 @@
+INTERNOS
+
+Employee data 
+- name: Jill Valentine
+- email: jill@mail.com
+- age: 32
+- salary: 20000.0
+
+Employee data 
+- name: Claire Redfield
+- email: claire@mail.com
+- age: 27
+- salary: 20000.0
+
+Employee data 
+- name: Ada Wong
+- email: ada@mail.com
+- age: 35
+- salary: 20000.0

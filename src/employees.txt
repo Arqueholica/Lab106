@@ -1,0 +1,61 @@
+EMPLEADOS
+
+Employee data 
+- name: Dean Winchester
+- email: dean@mail.com
+- age: 34
+- salary: 580000.0
+
+Employee data 
+- name: Sam Winchester
+- email: sam@mail.com
+- age: 29
+- salary: 52000.0
+
+Employee data 
+- name: Leon Kennedy
+- email: leon@mail.com
+- age: 28
+- salary: 470000.0
+
+Employee data 
+- name: Legolas
+- email: lego@mail.com
+- age: 2931
+- salary: 1540000.0
+
+Employee data 
+- name: Gimli
+- email: gim@mail.com
+- age: 139
+- salary: 6845000.0
+
+Employee data 
+- name: Bobby Singer
+- email: bob@mail.com
+- age: 54
+- salary: 6.8421428E8
+
+Employee data 
+- name: Crowley
+- email: king@mail.com
+- age: 2500
+- salary: 6.54168405621E11
+
+Employee data 
+- name: Gandalf
+- email: dalf@mail.com
+- age: 2019
+- salary: 6.5484512127E10
+
+Employee data 
+- name: Aragorn
+- email: aragorn@mail.com
+- age: 87
+- salary: 6151894.0
+
+Employee data 
+- name: Frodo Baggings
+- email: frodo@mail.com
+- age: 33
+- salary: 5168215.0
