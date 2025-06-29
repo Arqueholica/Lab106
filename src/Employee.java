@@ -15,11 +15,9 @@ public class Employee {
         this.salary = salary;
     }
 
-    public Employee() {
-    }
 
 
-    //MÉTODOS
+//MÉTODOS
     // getters&setters
 
     public String getName() {
@@ -59,10 +57,10 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee data " + '\'' +
-                "name: '" + name + '\'' +
-                ", email: '" + email + '\'' +
-                ", age: " + age +
-                ", salary: " + salary;
+        return "Employee data " + '\n' +
+                "- name: '" + name + '\n' +
+                "- email: '" + email + '\n' +
+                "- age: " + age + '\n' +
+                "- salary: " + salary + '\n';
     }
 }
